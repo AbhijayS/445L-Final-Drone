@@ -1,0 +1,362 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+
+# Make data base, printed on Tue Apr  5 18:51:48 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# makefile (from `Makefile', line 31)
+OBJ = obj/
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /Users/abhijay/Documents/GitHub/445L-Final-Code
+# makefile
+SHELL = /bin/sh
+# makefile (from `Makefile', line 47)
+RM = rm -rf
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# makefile (from `Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+__CFBundleIdentifier = com.microsoft.VSCode
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/27/_wntggyj5xxgxtjrnp6b6j1w0000gn/T/vscode-ipc-083db9ac-27d1-4ced-9ddc-ddaf6fff729c.sock
+# environment
+VSCODE_CWD = /
+# environment
+PATH = /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Applications/ARM/bin/:/Users/abhijay/Downloads/lm4tools-master/lm4flash/
+# makefile (from `Makefile', line 25)
+PROJECT = TM4C_VSCODE
+# environment
+VSCODE_LOG_STACK = false
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.tQUIrFARsz/Listeners
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_PIPE_LOGGING = true
+# makefile (from `Makefile', line 33)
+OBJS = $(addprefix $(OBJ),$(notdir $(SRCS:.c=.o)))
+# environment
+PWD = /Users/abhijay/Documents/GitHub/445L-Final-Code
+# makefile (from `Makefile', line 46)
+FLASHER = lm4flash 
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
+# environment
+HOME = /Users/abhijay
+# default
+MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/abhijay/Library/Application Support/Code/CachedData/b3318bc0524af3d74034b8bb8a64df0ccf35549a
+# environment
+LOGNAME = abhijay
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# makefile (from `Makefile', line 27)
+DEV = /dev/ttyACM0
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile (from `Makefile', line 48)
+MKDIR = @mkdir -p $(@D) 
+# environment
+XPC_FLAGS = 0x0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# makefile (from `Makefile', line 29)
+SRCS = $(wildcard src/*.c) $(wildcard libs/*.c)
+# environment
+SHLVL = 1
+# makefile (from `Makefile', line 43)
+CC = arm-none-eabi-gcc 
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = abhijay
+# makefile
+.DEFAULT_GOAL := all
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
+# makefile (from `Makefile', line 36)
+INC = -Iinc
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/27/_wntggyj5xxgxtjrnp6b6j1w0000gn/T/
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /Users/abhijay/Library/Application Support/Code/1.62.0-main.sock
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.5177701.5177707
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# environment
+__CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x0
+# environment
+COMMAND_MODE = unix2003
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+LC_ALL = C
+# automatic
+^F = $(notdir $^)
+# makefile (from `Makefile', line 45)
+OBJCOPY = arm-none-eabi-objcopy 
+# default
+SUFFIXES := 
+# makefile (from `Makefile', line 60)
+GCC_FLAGS = -nostartfiles -ffreestanding -ggdb -std=c99 -O0 -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mapcs-frame -mfloat-abi=softfp -T ld/TM4C123GH6PM.ld -e Reset_Handler
+# default
+.INCLUDE_DIRS = /usr/local/include
+# environment
+MAKELEVEL := 0
+# environment
+LANG = C
+# environment
+VSCODE_PID = 3561
+# variable set hash-table stats:
+# Load=74/1024=7%, Rehash=0, Collisions=11/118=9%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# libs (device 16777221, inode 10641807): 8 files, no impossibilities.
+# . (device 16777221, inode 10641787): 12 files, no impossibilities.
+# src (device 16777221, inode 10641820): 3 files, no impossibilities.
+
+# 23 files, no impossibilities in 3 directories.
+
+# Implicit Rules
+
+obj/%.o: src/%.c
+#  commands to execute (from `Makefile', line 66):
+	$(MKDIR)              
+	$(CC) -c $(GCC_FLAGS) $(INC) -o $@ $^
+	
+
+obj/%.o: libs/%.c
+#  commands to execute (from `Makefile', line 70):
+	$(MKDIR)              
+	$(CC) -c $(GCC_FLAGS) $(INC) -o $@ $^
+	
+
+# 2 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+# Not a target:
+obj/PWM.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: bin/TM4C_VSCODE.bin
+#  Phony target (prerequisite of .PHONY).
+#  Command-line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/7=0%
+
+.PHONY: all clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+bin/TM4C_VSCODE.elf: obj/main.o obj/PLL.o obj/PWM.o obj/UART.o obj/radio.o obj/startup.o obj/systick.o
+#  Implicit rule search has not been done.
+#  Last modified 2022-04-05 18:12:34
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/7=0%
+#  commands to execute (from `Makefile', line 74):
+	$(MKDIR)              
+	$(CC) $(GCC_FLAGS) -o $@ $^
+	
+
+obj/main.o: src/main.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `main'
+#  Last modified 2022-04-05 18:12:33
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := obj/main.o
+# automatic
+# % := 
+# automatic
+# * := main
+# automatic
+# + := src/main.c
+# automatic
+# | := 
+# automatic
+# < := src/main.c
+# automatic
+# ^ := src/main.c
+# automatic
+# ? := src/main.c
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/18=6%
+#  commands to execute (from `Makefile', line 66):
+	$(MKDIR)              
+	$(CC) -c $(GCC_FLAGS) $(INC) -o $@ $^
+	
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-03-13 19:05:29
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+bin/TM4C_VSCODE.bin: bin/TM4C_VSCODE.elf
+#  Implicit rule search has not been done.
+#  Last modified 2022-04-05 18:12:34
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/7=0%
+#  commands to execute (from `Makefile', line 78):
+	$(OBJCOPY) -O binary $< $@
+	
+
+# Not a target:
+obj/radio.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/main.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-04-05 18:23:27
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+obj/PLL.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+ 
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 87):
+	-$(RM) obj
+	-$(RM) bin
+	
+
+# Not a target:
+obj/UART.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+flash:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 83):
+	$(FLASHER) -S $(DEV) bin/$(PROJECT).bin
+	
+
+# Not a target:
+obj/startup.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+obj/systick.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=17/1024=2%, Rehash=0, Collisions=4/44=9%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Finished Make data base on Tue Apr  5 18:51:48 2022
+
+ 

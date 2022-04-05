@@ -1,0 +1,12 @@
+{
+    "makefile.extensionOutputFolder": "./.vscode",
+    "files.associations": {
+        "gpio.h": "c",
+        "tm4c123gh6pm.h": "c",
+        "dac.h": "c",
+        "blynk.h": "c",
+        "startup.h": "c",
+        "stdlib.h": "c",
+        "systick.h": "c"
+    }
+}

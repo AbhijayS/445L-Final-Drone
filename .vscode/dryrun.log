@@ -1,0 +1,21 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/abhijay/Documents/GitHub/445L-Final-Code'
+mkdir -p obj               
+arm-none-eabi-gcc  -c -nostartfiles -ffreestanding -ggdb -std=c99 -O0 -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mapcs-frame -mfloat-abi=softfp -T ld/TM4C123GH6PM.ld -e Reset_Handler -Iinc -o obj/main.o src/main.c
+mkdir -p obj               
+arm-none-eabi-gcc  -c -nostartfiles -ffreestanding -ggdb -std=c99 -O0 -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mapcs-frame -mfloat-abi=softfp -T ld/TM4C123GH6PM.ld -e Reset_Handler -Iinc -o obj/PLL.o libs/PLL.c
+mkdir -p obj               
+arm-none-eabi-gcc  -c -nostartfiles -ffreestanding -ggdb -std=c99 -O0 -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mapcs-frame -mfloat-abi=softfp -T ld/TM4C123GH6PM.ld -e Reset_Handler -Iinc -o obj/PWM.o libs/PWM.c
+mkdir -p obj               
+arm-none-eabi-gcc  -c -nostartfiles -ffreestanding -ggdb -std=c99 -O0 -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mapcs-frame -mfloat-abi=softfp -T ld/TM4C123GH6PM.ld -e Reset_Handler -Iinc -o obj/UART.o libs/UART.c
+mkdir -p obj               
+arm-none-eabi-gcc  -c -nostartfiles -ffreestanding -ggdb -std=c99 -O0 -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mapcs-frame -mfloat-abi=softfp -T ld/TM4C123GH6PM.ld -e Reset_Handler -Iinc -o obj/radio.o libs/radio.c
+mkdir -p obj               
+arm-none-eabi-gcc  -c -nostartfiles -ffreestanding -ggdb -std=c99 -O0 -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mapcs-frame -mfloat-abi=softfp -T ld/TM4C123GH6PM.ld -e Reset_Handler -Iinc -o obj/startup.o libs/startup.c
+mkdir -p obj               
+arm-none-eabi-gcc  -c -nostartfiles -ffreestanding -ggdb -std=c99 -O0 -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mapcs-frame -mfloat-abi=softfp -T ld/TM4C123GH6PM.ld -e Reset_Handler -Iinc -o obj/systick.o libs/systick.c
+mkdir -p bin               
+arm-none-eabi-gcc  -nostartfiles -ffreestanding -ggdb -std=c99 -O0 -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mapcs-frame -mfloat-abi=softfp -T ld/TM4C123GH6PM.ld -e Reset_Handler -o bin/TM4C_VSCODE.elf obj/main.o obj/PLL.o obj/PWM.o obj/UART.o obj/radio.o obj/startup.o obj/systick.o
+arm-none-eabi-objcopy  -O binary bin/TM4C_VSCODE.elf bin/TM4C_VSCODE.bin
+make: Leaving directory `/Users/abhijay/Documents/GitHub/445L-Final-Code'
+ 
